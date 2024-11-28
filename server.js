@@ -77,7 +77,7 @@ app.get('/', async(req, res) => {
             <div class="content">
                 <h1>You've landed on the Home Page!</h1>
                 <p>To fetch captions for a YouTube video, please use the following endpoint:</p>
-                <p><code>/captions/:videoID</code></p>
+                <p><code>/caption/:videoID</code></p>
                 <p>Simply replace <code>:videoID</code> with the actual YouTube video ID to retrieve the captions.</p>
             </div>
         </div>
