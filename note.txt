@@ -1,0 +1,5 @@
+The user can change the language any time he wishes
+So instead of fetching captions every time, get once and translate for what ever language he asks
+
+
+Keep a separate end point to translate
