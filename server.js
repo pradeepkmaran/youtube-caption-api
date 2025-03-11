@@ -17,7 +17,7 @@ app.get('/', homeController);
 
 app.get('/caption/:videoId', captionController);
 
-app.get('/translate/:lang/:videoId', languageController);
+app.get('/translate', languageController);
 
 app.listen(PORT, () => {
   console.log(`Server is running..`);
