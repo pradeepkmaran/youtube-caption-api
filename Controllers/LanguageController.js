@@ -7,7 +7,7 @@ require('dotenv').config();
 // const API_KEY = process.env.API_KEY;
 // const HOST_END_POINT = process.env.END_POINT;
 
-const genAI = new GoogleGenerativeAI("AIzaSyC3c1fpAsMRS04oAiFxfzbs4-izG-luyOw");
+const genAI = new GoogleGenerativeAI(process.env.AI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 async function translate(json, lang) {
