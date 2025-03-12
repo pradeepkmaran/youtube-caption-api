@@ -41,12 +41,10 @@ const languageController = async (req, res) => {
             return res.status(400).json({ error: "Invalid request: Missing JSON data or language parameter." });
         }
 
-        console.log(`Translating video ID: ${videoId} to language: ${lang}`);
         const translatedJson = await translate(jsonData, lang);
 
         res.status(200).json({
             success: true,
-            videoId,
             translatedData: translatedJson,
         });
     } catch (error) {
