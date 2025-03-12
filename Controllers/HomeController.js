@@ -139,15 +139,13 @@ const homeController = async (req, res) => {
                         <p>Fetch and translate video captions to a specific language.</p>
                         <p>
                             <strong>Endpoint:</strong> 
-                            <span class="code-highlight">/translate/:lang/:videoId</span>
+                            <span class="code-highlight">/translate?lang=language</span>
                         </p>
                         <div class="endpoint-example">
-                            GET https://youtube-caption-api.vercel.app/translate/es/E4WlUXrJgy4
+                            POST https://youtube-caption-api.vercel.app/translate?lang=tamil
                         </div>
                         <p>
-                            <strong>Language Codes:</strong> Use 
-                            <span class="code-highlight">ISO 639-1</span> 
-                            (e.g., en, es, fr)
+                            The body of the post request consists of the captions to be translated in the JSON format
                         </p>
                     </div>
                 </div>

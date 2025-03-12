@@ -36,7 +36,6 @@ const languageController = async (req, res) => {
     try {
         const jsonData = req.body;
         const lang = req.query.lang;
-        const videoId = req.query.videoId;
 
         if (!jsonData || !lang) {
             return res.status(400).json({ error: "Invalid request: Missing JSON data or language parameter." });
